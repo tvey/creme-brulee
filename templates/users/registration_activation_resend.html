@@ -1,0 +1,12 @@
+{% extends 'users/auth_wrap.html' %}
+
+{% block title %}Активация аккаунта | {% endblock title %}
+
+{% block auth %}
+  <h2>Запросить новую ссылку активации аккаунта</h2>
+  <form method="post">{% csrf_token %}
+    {% include 'includes/form.html' with form=form %}
+    <button class="btn btn-info mr-2" type='submit'>Отправить ссылку</button>
+    <small class="text-secondary mt-2-5 d-inline-block"><a href="{% url 'users:login' %}" >Страница входа</a></small>
+  </form>
+{% endblock %}

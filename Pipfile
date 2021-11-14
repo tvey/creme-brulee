@@ -12,6 +12,11 @@ django-environ = "*"
 pytest-django = "*"
 faker = "*"
 pytest-factoryboy = "*"
+celery = "*"
+django-celery-beat = "*"
+django-celery-results = "*"
+redis = "*"
+pytest-cov = "*"
 
 [dev-packages]
 ipython = "*"

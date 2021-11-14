@@ -1,0 +1,30 @@
+{% extends 'users/auth_wrap.html' %}
+
+{% block title %}
+  {% if 'join' in request.path %}
+    Регистрация | 
+  {% elif 'login' in request.path %}
+    Войти | 
+  {% endif %}
+{% endblock title %}
+
+{% block auth %}
+  {% if 'join' in request.path %}
+    <form method="post">{% csrf_token %}
+      <h2>Регистрация</h2>
+      {% include 'includes/form.html' with form=form %}
+      <button type="submit" class="btn btn-success mr-2">Зарегистрироваться</button>
+      <small class="text-secondary mt-2-5 d-inline-block">Уже есть аккаунт? <a href="{% url 'users:login' %}">Войти</a></small>
+    </form>
+    {% elif 'login' in request.path %}
+    <form method="post">{% csrf_token %}
+    <h2>Войти</h2>
+    {% include 'includes/form.html' with form=form %}
+    <small class="d-block mb-2">
+      <a href="{% url 'password_reset' %}">Забыли пароль?</a>
+    </small>
+    <button type="submit" class="btn btn-success mr-2">Войти</button>
+    <small class="text-secondary mt-2-5 d-inline-block">Нужен аккаунт? <a href="{% url 'users:register' %}">Можно создать</a></small>
+    </form>
+  {% endif %}
+{% endblock auth %}
