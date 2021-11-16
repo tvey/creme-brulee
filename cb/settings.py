@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'rest_framework',
 
     # local
+    'words.apps.WordsConfig',
     'users.apps.UsersConfig',
 ]
 

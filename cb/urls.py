@@ -13,6 +13,7 @@ from users.forms import ResetPasswordForm, SetUserPasswordForm
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', TemplateView.as_view(template_name='home.html'), name='home'),
+    path('', include('words.urls')),
     path('', include('users.urls')),
     path(
         'reset-password/',
