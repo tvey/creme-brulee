@@ -1,0 +1,146 @@
+[
+    {
+        "model": "words.word",
+        "pk": 1,
+        "fields": {
+            "word": "играть",
+            "part_of_speech": "verb",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 2,
+        "fields": {
+            "word": "прыгать",
+            "part_of_speech": "verb",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 3,
+        "fields": {
+            "word": "смотреть",
+            "part_of_speech": "verb",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 4,
+        "fields": {
+            "word": "крикнуть",
+            "part_of_speech": "verb",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 5,
+        "fields": {
+            "word": "брать",
+            "part_of_speech": "verb",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 6,
+        "fields": {
+            "word": "время",
+            "part_of_speech": "noun",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 7,
+        "fields": {
+            "word": "край",
+            "part_of_speech": "noun",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 8,
+        "fields": {
+            "word": "друг",
+            "part_of_speech": "noun",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 9,
+        "fields": {
+            "word": "правда",
+            "part_of_speech": "noun",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 10,
+        "fields": {
+            "word": "гречка",
+            "part_of_speech": "noun",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 11,
+        "fields": {
+            "word": "алгоритм",
+            "part_of_speech": "noun",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 12,
+        "fields": {
+            "word": "трудный",
+            "part_of_speech": "adjective",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 13,
+        "fields": {
+            "word": "красный",
+            "part_of_speech": "adjective",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 14,
+        "fields": {
+            "word": "хороший",
+            "part_of_speech": "adjective",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 15,
+        "fields": {
+            "word": "интересный",
+            "part_of_speech": "adjective",
+            "difficulty": 0
+        }
+    },
+    {
+        "model": "words.word",
+        "pk": 16,
+        "fields": {
+            "word": "пряный",
+            "part_of_speech": "adjective",
+            "difficulty": 0
+        }
+    }
+]

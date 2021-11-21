@@ -2,8 +2,9 @@ import random
 
 from django.shortcuts import render
 
+from .models import Word
+
 
 def say_this(request):
-    evil = ['рыба', 'крекер', 'курьер', 'маршрутка', 'трактор']
-
-    return render(request, 'words/say.html', {'word': random.choice(evil)})
+    words = Word.objects.filter(difficulty=0)
+    return render(request, 'words/say.html', {'word': random.choice(words)})
