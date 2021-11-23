@@ -1,42 +1,42 @@
 [
     {
         "model": "words.expressiontype",
-        "pk": 0,
+        "pk": 1,
         "fields": {
             "e_type": "словосочетание"
         }
     },
     {
         "model": "words.expressiontype",
-        "pk": 1,
+        "pk": 2,
         "fields": {
             "e_type": "предложение"
         }
     },
     {
         "model": "words.expressiontype",
-        "pk": 2,
+        "pk": 3,
         "fields": {
             "e_type": "чистоговорка"
         }
     },
     {
         "model": "words.expressiontype",
-        "pk": 3,
+        "pk": 4,
         "fields": {
             "e_type": "скороговорка"
         }
     },
     {
         "model": "words.expressiontype",
-        "pk": 4,
+        "pk": 5,
         "fields": {
             "e_type": "стихотворение"
         }
     },
     {
         "model": "words.expressiontype",
-        "pk": 5,
+        "pk": 6,
         "fields": {
             "e_type": "текст"
         }

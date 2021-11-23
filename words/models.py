@@ -28,7 +28,7 @@ class Word(models.Model):
         (3, '3+'),
     ]
 
-    word = models.CharField('Слово', max_length=50)
+    content = models.CharField('Слово', max_length=50)
     num_r = models.PositiveSmallIntegerField(
         'Количество *р* в слове',
         blank=True,
@@ -65,6 +65,10 @@ class Word(models.Model):
         blank=True,
         null=True,
     )
+    frequency = models.PositiveSmallIntegerField(  # !
+        blank=True,
+        null=True,
+    )
     is_active = models.BooleanField(
         default=True,
         blank=True,
@@ -74,10 +78,10 @@ class Word(models.Model):
     class Meta:
         verbose_name = 'Слово'
         verbose_name_plural = 'Слова'
-        ordering = ['word']
+        ordering = ['content']
 
     def __str__(self):
-        return self.word
+        return self.content
 
     def save(self, *args, **kwargs):
         self.num_r = self.word.lower().count('р')
@@ -100,7 +104,7 @@ class ExpressionType(models.Model):
 class Expression(models.Model):
     """Фраза/выражение, сочетание нескольких слов любой длины."""
 
-    expression = models.TextField('Выражение')
+    content = models.TextField('Выражение')
     e_type = models.ManyToManyField(
         ExpressionType,
         verbose_name='Тип выражения',
@@ -112,14 +116,14 @@ class Expression(models.Model):
     )
 
     def __str__(self):
-        if len(self.expression) < 42:
-            return self.expression
-        return f'{self.expression[:42]}...'
+        if len(self.content) < 42:
+            return self.content
+        return f'{self.content[:42]}...'
 
     class Meta:
         verbose_name = 'Выражение'
         verbose_name_plural = 'Выражения'
-        ordering = ['expression']
+        ordering = ['content']
 
 
 class UserWord(models.Model):

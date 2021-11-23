@@ -15,7 +15,7 @@ def dump_to_file(data, filename):
         json.dump(data, fh, ensure_ascii=False, indent=4)
 
 
-def make_word_fixture():
+def make_words():
     words = verbs + nouns + adjectives
     word_fixture = []
 
@@ -24,7 +24,7 @@ def make_word_fixture():
         word['model'] = 'words.word'
         word['pk'] = i
         word['fields'] = {}
-        word['fields']['word'] = w
+        word['fields']['content'] = w
         pos = ''
         if w in verbs:
             pos = 'verb'
@@ -62,7 +62,7 @@ def make_expressions():
         e['model'] = 'words.expression'
         e['pk'] = i
         e['fields'] = {}
-        e['fields']['expression'] = expr
+        e['fields']['content'] = expr
         e_type = []
         if expr in expressions_1:
             e_type.append(1)
@@ -73,4 +73,7 @@ def make_expressions():
 
     dump_to_file(expression_fixture, 'expressions')
 
+
+make_words()
+make_expression_types()
 make_expressions()
