@@ -72,8 +72,8 @@ class Word(models.Model):
     )
 
     class Meta:
-        verbose_name = 'Выражение'
-        verbose_name_plural = 'Выражения'
+        verbose_name = 'Слово'
+        verbose_name_plural = 'Слова'
         ordering = ['word']
 
     def __str__(self):
@@ -89,6 +89,13 @@ class ExpressionType(models.Model):
 
     e_type = models.CharField(max_length=50)
 
+    class Meta:
+        verbose_name = 'Тип выражений'
+        verbose_name_plural = 'Типы выражений'
+
+    def __str__(self):
+        return self.e_type
+
 
 class Expression(models.Model):
     """Фраза/выражение, сочетание нескольких слов любой длины."""
@@ -98,7 +105,6 @@ class Expression(models.Model):
         ExpressionType,
         verbose_name='Тип выражения',
     )
-    length = models.CharField(max_length=50)
     words = models.ManyToManyField(
         Word,
         related_name='e_words',
@@ -106,9 +112,9 @@ class Expression(models.Model):
     )
 
     def __str__(self):
-        if len(self.expression) < 20:
+        if len(self.expression) < 42:
             return self.expression
-        return f'{self.expression[:20]}...'
+        return f'{self.expression[:42]}...'
 
     class Meta:
         verbose_name = 'Выражение'
@@ -117,7 +123,7 @@ class Expression(models.Model):
 
 
 class UserWord(models.Model):
-    """"""
+    """Слово, отмеченное пользователем (избранное/не нравится)."""
 
     user = models.ForeignKey(
         User,
@@ -142,12 +148,16 @@ class UserWord(models.Model):
         help_text='Возможность исключить слово',
     )
 
+    class Meta:
+        verbose_name = 'Избранное слово'
+        verbose_name_plural = 'Избранные слова'
+
     def __str__(self):
-        return
+        return f'{self.word.word} ({self.user.username})'
 
 
 class UserExpression(models.Model):
-    """"""
+    """Выражение, отмеченное пользователем (избранное/не нравится)."""
 
     user = models.ForeignKey(
         User,
@@ -172,5 +182,9 @@ class UserExpression(models.Model):
         help_text='Возможность исключить выражение',
     )
 
+    class Meta:
+        verbose_name = 'Избранное выражение'
+        verbose_name_plural = 'Избранные выражения'
+
     def __str__(self):
-        return
+        return f'{self.expression.expression} ({self.user.username})'

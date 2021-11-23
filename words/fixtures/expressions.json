@@ -1,0 +1,102 @@
+[
+    {
+        "model": "words.expression",
+        "pk": 1,
+        "fields": {
+            "expression": "доброе утро",
+            "e_type": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 2,
+        "fields": {
+            "expression": "оранжевая краска",
+            "e_type": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 3,
+        "fields": {
+            "expression": "северный ветер",
+            "e_type": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 4,
+        "fields": {
+            "expression": "российский рубль",
+            "e_type": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 5,
+        "fields": {
+            "expression": "реестр для курьера",
+            "e_type": [
+                1
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 6,
+        "fields": {
+            "expression": "Свиристель свиристит свирелью в сирени.",
+            "e_type": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 7,
+        "fields": {
+            "expression": "Под деревом тетерев тетерева встретил.",
+            "e_type": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 8,
+        "fields": {
+            "expression": "Добры бобры идут в боры.",
+            "e_type": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 9,
+        "fields": {
+            "expression": "Три дроворуба на трех дворах дрова рубят.",
+            "e_type": [
+                4
+            ]
+        }
+    },
+    {
+        "model": "words.expression",
+        "pk": 10,
+        "fields": {
+            "expression": "На горе Арарат растет красный виноград.",
+            "e_type": [
+                4
+            ]
+        }
+    }
+]
