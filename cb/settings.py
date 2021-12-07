@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     # local
     'words.apps.WordsConfig',
     'users.apps.UsersConfig',
+    'practices.apps.PracticesConfig',
 ]
 
 MIDDLEWARE = [
