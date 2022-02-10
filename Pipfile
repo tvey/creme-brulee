@@ -4,22 +4,22 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+django = "==3.2.12"
 djangorestframework = "*"
-psycopg2 = "*"
-pytest = "*"
+psycopg2-binary = "*"
 django-environ = "*"
-pytest-django = "*"
-faker = "*"
-pytest-factoryboy = "*"
 celery = "*"
 django-celery-beat = "*"
 django-celery-results = "*"
 redis = "*"
-pytest-cov = "*"
 
 [dev-packages]
 ipython = "*"
+faker = "*"
+pytest = "*"
+pytest-django = "*"
+pytest-cov = "*"
+pytest-factoryboy = "*"
 
 [requires]
-python_version = "3.9"
+python_version = "3.10"
