@@ -1,0 +1,23 @@
+__pycache__/
+*.py[cod]
+
+# Tests
+htmlcov/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+*.cover
+*.py,cover
+.pytest_cache/
+cover/
+
+*.sqlite3
+*.db
+
+# Environments
+.env*
+
+# Other
+stuff/
+notes.txt

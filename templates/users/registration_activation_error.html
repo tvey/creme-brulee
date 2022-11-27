@@ -1,9 +1,0 @@
-{% extends 'users/auth_wrap.html' %}
-
-{% block title %}Активация аккаунта | {% endblock title %}
-
-{% block auth %}
-  <p class="mb-2">Извините, эта ссылка не работает.</p>
-  <p class="mb-2"><a class="text-primary" href="{% url 'users:resend-activation' %}">Отправить новую ссылку</a></p>
-  <p><a class="text-info" href="{% url 'users:login' %}">Страница входа</a></p>
-{% endblock %}

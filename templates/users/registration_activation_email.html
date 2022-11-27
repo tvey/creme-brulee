@@ -1,8 +1,0 @@
-{% autoescape off %}
-  {% if first %}
-    <p>Добро пожаловать!</p>
-  {% endif %}
-    <p>Пожалуйста, пройдите по ссылке ниже, чтобы завершить регистрацию:<br>
-    {{ protocol }}://{{ domain }}{% url 'users:activate-account' uidb64=uidb64 token=token %}</p>
-    <p>Имя пользователя: {{ user.username }}</p>
-{% endautoescape %}

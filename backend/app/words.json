@@ -1,0 +1,82 @@
+[
+    {
+        "content": "играть",
+        "part_of_speech": "verb",
+        "difficulty": 0
+    },
+    {
+        "content": "прыгать",
+        "part_of_speech": "verb",
+        "difficulty": 0
+    },
+    {
+        "content": "смотреть",
+        "part_of_speech": "verb",
+        "difficulty": 0
+    },
+    {
+        "content": "крикнуть",
+        "part_of_speech": "verb",
+        "difficulty": 0
+    },
+    {
+        "content": "брать",
+        "part_of_speech": "verb",
+        "difficulty": 0
+    },
+    {
+        "content": "время",
+        "part_of_speech": "noun",
+        "difficulty": 0
+    },
+    {
+        "content": "край",
+        "part_of_speech": "noun",
+        "difficulty": 0
+    },
+    {
+        "content": "друг",
+        "part_of_speech": "noun",
+        "difficulty": 0
+    },
+    {
+        "content": "правда",
+        "part_of_speech": "noun",
+        "difficulty": 0
+    },
+    {
+        "content": "гречка",
+        "part_of_speech": "noun",
+        "difficulty": 0
+    },
+    {
+        "content": "алгоритм",
+        "part_of_speech": "noun",
+        "difficulty": 0
+    },
+    {
+        "content": "трудный",
+        "part_of_speech": "adjective",
+        "difficulty": 0
+    },
+    {
+        "content": "красный",
+        "part_of_speech": "adjective",
+        "difficulty": 0
+    },
+    {
+        "content": "хороший",
+        "part_of_speech": "adjective",
+        "difficulty": 0
+    },
+    {
+        "content": "интересный",
+        "part_of_speech": "adjective",
+        "difficulty": 0
+    },
+    {
+        "content": "пряный",
+        "part_of_speech": "adjective",
+        "difficulty": 0
+    }
+]
