@@ -1,12 +1,22 @@
+import enum
+
 from sqlalchemy import (
     Column,
     String,
     Integer,
     ForeignKey,
+    Enum
 )
 from sqlalchemy.orm import relationship
 
 from app.database import Base
+
+
+class Difficulty(enum.Enum):
+    easy = 0
+    medium = 1
+    hard = 2
+    extreme = 3
 
 
 class PartOfSpeech(Base):
@@ -25,11 +35,8 @@ class Word(Base):
     id = Column(Integer, primary_key=True, autoincrement=True)
     content = Column(String, nullable=False, unique=True)
     part_of_speech_id = Column(Integer, ForeignKey('parts_of_speech.id'))
-    part_of_speech = relationship(
-        'PartOfSpeech',
-        backref='words',
-        uselist=True,
-    )
+    difficulty = Column(Enum(Difficulty))
+    stressed_letter_idx = Column(Integer)
 
     def __repr__(self):
         return f'Word(content={self.content})'
